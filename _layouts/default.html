@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="/assets/css/styles.css">
+
+		{% if page.title %}
+		<title>{{ page.title }} | NetMythos</title>
+		{% else %}
+		<title>NetMythos</title>
+		{% endif %}
+	</head>
+	<body>
+		{% include header.html %}
+		<main>
+		{{ content }}
+		</main>
+		{% include footer.html %}
+	</body>
+</html>

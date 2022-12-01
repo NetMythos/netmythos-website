@@ -1,0 +1,91 @@
+$dark-surface: #121212;
+
+$high-emphasis-text: rgba(255, 255, 255, 0.87);
+$medium-emphasis-text: rgba(255, 255, 255, 0.60);
+$disabled-text: rgba(255, 255, 255, 0.38);
+
+$elevation-01: rgba(255, 255, 255, 0.05);
+$elevation-02: rgba(255, 255, 255, 0.07);
+$elevation-03: rgba(255, 255, 255, 0.08);
+$elevation-04: rgba(255, 255, 255, 0.09);
+$elevation-06: rgba(255, 255, 255, 0.11);
+$elevation-08: rgba(255, 255, 255, 0.12);
+$elevation-12: rgba(255, 255, 255, 0.14);
+$elevation-16: rgba(255, 255, 255, 0.15);
+$elevation-24: rgba(255, 255, 255, 0.16);
+
+$header-font: "Roboto";
+$body-font: "Roboto";
+
+$h3-fsize: 48px;
+$h4-fsize: 34px;
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: $medium-emphasis-text;
+	text-decoration: none;
+}
+
+a:hover {
+	color: $high-emphasis-text;
+	text-decoration: underline;
+}
+
+body {
+	background-color: $dark-surface;
+	color: $high-emphasis-text;
+
+	display: flex;
+	flex-direction: column;
+
+	font-family: $body-font;
+
+	min-height: 100vh;
+}
+
+header {
+	background-color: $elevation-24;
+	display: flex;
+
+	padding: 0 16px;
+}
+
+.site-title {
+	font-size: $h4-fsize;
+	color: $high-emphasis-text;
+	padding: 4px 0;
+}
+
+.nav-link {
+	padding: 0 16px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.nav-link:hover {
+	background-color: $elevation-02;
+}
+
+main {
+	flex: 1;
+	padding: 8px 32px;
+}
+
+footer {
+	background-color: $elevation-12;
+	display: flex;
+	justify-content: center;
+	padding: 4px;
+}
+
+.flex-grow {
+	flex: 1;
+}
+
