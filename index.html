@@ -2,5 +2,15 @@
 layout: default
 ---
 
-<h1>Welcome to NetMythos</h1>
-<h2>Ya Filthy Animal</h2>
+<h2>Latest Posts</h2>
+
+<h3>Nothing Yet. Come back later.</h3>
+<ul>
+	{% for post in site.posts %}
+	<li>
+		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+		{{ post.excerpt }}
+	</li>
+	{% endfor %}
+</ul>
+

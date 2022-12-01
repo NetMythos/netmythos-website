@@ -1,5 +1,7 @@
 <header>
 	<a class="site-title" href="/">NetMythos</a>
 	<div class="flex-grow"></div>
-	<a class="nav-link" href="/">Home</a>
+	{% for item in site.data.navigation %}
+	<a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
+	{% endfor %}
 </header>
