@@ -4,6 +4,11 @@ $high-emphasis-text: rgba(255, 255, 255, 0.87);
 $medium-emphasis-text: rgba(255, 255, 255, 0.60);
 $disabled-text: rgba(255, 255, 255, 0.38);
 
+$colored-text: rgba(218, 145, 0, 1.0);
+$colored-high-emphasis-text: rgba(218, 145, 0, 0.87);
+$colored-medium-emphasis-text: rgba(218, 145, 0, 0.60);
+$colored-disabled-text: rgba(203, 161, 53, 0.38);
+
 $elevation-01: rgba(255, 255, 255, 0.05);
 $elevation-02: rgba(255, 255, 255, 0.07);
 $elevation-03: rgba(255, 255, 255, 0.08);
@@ -27,13 +32,13 @@ $h4-fsize: 34px;
 }
 
 a {
-	color: $medium-emphasis-text;
+	color: $colored-high-emphasis-text;
 	text-decoration: none;
 }
 
 a:hover {
-	color: $high-emphasis-text;
 	text-decoration: underline;
+	color: $colored-text;
 }
 
 body {
@@ -67,10 +72,13 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+
+	color: $high-emphasis-text;
 }
 
 .nav-link:hover {
 	background-color: $elevation-02;
+	color: $high-emphasis-text;
 }
 
 main {
